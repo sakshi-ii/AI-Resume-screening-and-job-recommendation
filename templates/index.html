@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Resume Screening</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #141e30, #243b55);
+            color: white;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 0;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 80px 20px 50px;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            color: #00d4ff;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #d6d6d6;
+            max-width: 650px;
+            margin: auto;
+            line-height: 1.6;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 50px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 320px;
+            padding: 35px 25px;
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 20px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+        }
+
+        .card .icon {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        .card h2 {
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            color: #d0d0d0;
+            margin-bottom: 25px;
+            line-height: 1.5;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 13px 30px;
+            border-radius: 30px;
+            background: #00d4ff;
+            color: #111;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: white;
+        }
+
+        footer {
+            text-align: center;
+            padding: 50px 0 25px;
+            color: #aaa;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <nav>
+            <div class="logo">🤖 AI Resume Screening</div>
+        </nav>
+
+        <section class="hero">
+
+            <h1>Smart <span>AI-Powered</span><br>Recruitment System</h1>
+
+            <p>
+                Upload resumes, verify identity, match candidates with jobs
+                and schedule interviews using an intelligent recruitment system.
+            </p>
+
+            <div class="cards">
+
+                <div class="card">
+
+                    <div class="icon">👨‍💼</div>
+
+                    <h2>Admin Panel</h2>
+
+                    <p>
+                        Manage users, jobs, applications, candidates
+                        and interview scheduling.
+                    </p>
+
+                    <a href="/login?role=admin" class="btn">
+                        Admin Login
+                    </a>
+
+                </div>
+
+
+                <div class="card">
+
+                    <div class="icon">👤</div>
+
+                    <h2>User Panel</h2>
+
+                    <p>
+                        Verify your identity, upload your resume,
+                        find suitable jobs and track applications.
+                    </p>
+
+                    <a href="/login?role=user" class="btn">
+                        User Login
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <footer>
+            © 2026 AI Resume Screening System
+        </footer>
+
+    </div>
+
+</body>
+</html>
